@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#566b2f">
+<meta name="description" content="Makaria — gestão financeira pessoal com propósito.">
+<title>Makaria | Gestão Financeira</title>
+<link rel="icon" href="./logo.svg">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="toast" aria-live="polite"></div>
+
+<section id="auth" class="auth">
+<div class="auth-card">
+<div class="brand"><img src="./logo.svg" alt="Logo Makaria"><div><b>MAKARIA</b><small>Onde Prosperidade Encontra Plenitude.</small></div></div>
+<div class="hero"><span class="eyebrow">Gestão Financeira Inteligente</span><h1>Seu Dinheiro, Com Propósito.</h1><p>Organize sua vida financeira, acompanhe seus objetivos e tome decisões com mais clareza.</p></div>
+<div class="tabs"><button class="active" data-mode="login" type="button">Entrar</button><button data-mode="signup" type="button">Criar Conta</button></div>
+<form id="authForm">
+<label id="nameBox" class="hide">Nome Completo<input id="name" autocomplete="name"></label>
+<label>E-mail<input id="email" type="email" autocomplete="email" required></label>
+<label>Senha<input id="pass" type="password" minlength="8" required></label>
+<button class="primary" id="authBtn">Entrar</button><p id="authMsg"></p>
+</form>
+<small class="sign">Criado por Mirela Catherine de Oliveira.</small>
+</div>
+</section>
+
+<section id="app" class="hide">
+<header class="topbar">
+<div class="brand mini"><img src="./logo.svg" alt="Logo Makaria"><div><b>MAKARIA</b><small>Gestão Financeira</small></div></div>
+<div class="head"><span id="hello"></span><button id="theme" class="icon-btn" type="button">☾</button><button id="logout" class="ghost-btn" type="button">Sair</button></div>
+</header>
+<div class="layout">
+<aside><nav id="nav">
+<button class="active" data-page="home">⌂ <span>Visão Geral</span></button>
+<button data-page="transactions">↕ <span>Transações</span></button>
+<button data-page="budget">◫ <span>Orçamento</span></button>
+<button data-page="goals">◎ <span>Metas</span></button>
+<button data-page="accounts">▣ <span>Contas</span></button>
+<button data-page="cards">▤ <span>Cartões</span></button>
+<button data-page="investments">↗ <span>Investimentos</span></button>
+<button data-page="bills">◷ <span>Contas a Pagar</span></button>
+<button data-page="reports">▥ <span>Relatórios</span></button>
+<button data-page="calendar">□ <span>Calendário</span></button>
+<button data-page="categories">◈ <span>Categorias</span></button>
+<button data-page="salary">▰ <span>Salário</span></button>
+<button data-page="settings">⚙ <span>Configurações</span></button>
+</nav><small>Makaria · Criado por Mirela Catherine de Oliveira</small></aside>
+<main id="main"></main>
+</div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/appwrite@29.0.0"></script>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
