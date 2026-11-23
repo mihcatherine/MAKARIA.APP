@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Makaria — Prosperidade e plenitude</title>
+<meta name="theme-color" content="#4f6f3a"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="logo.svg">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/appwrite@18.0.0"></script>
+</head>
+<body>
+<div id="toast"></div>
+<section id="auth" class="auth-wrap"><div class="auth-card" id="authCard"></div></section>
+<main id="app" class="hidden">
+<header class="topbar"><div class="brand"><img src="logo.svg"><div><strong>MAKARIA</strong><span>onde prosperidade encontra plenitude.</span></div></div><div class="top-actions"><button id="notifyBtn" class="icon-btn" title="Notificações">🔔</button><button id="logoutBtn" class="icon-btn" title="Sair">↪</button></div></header>
+<div class="shell"><aside class="sidebar"><button data-view="home" class="nav active">⌂ <span>Início</span></button><button data-view="transactions" class="nav">↕ <span>Lançamentos</span></button><button data-view="planning" class="nav">▦ <span>Planejamento</span></button><button data-view="analysis" class="nav">◫ <span>Análises</span></button><button data-view="more" class="nav">☷ <span>Mais</span></button></aside><section id="view"></section></div>
+<nav class="bottom"><button data-view="home" class="active">⌂<small>Início</small></button><button data-view="transactions">↕<small>Lançamentos</small></button><button data-view="planning">▦<small>Planejamento</small></button><button data-view="analysis">◫<small>Análises</small></button><button data-view="more">☷<small>Mais</small></button></nav>
+</main>
+<div id="modal" class="hidden"></div><script src="app.js"></script>
+</body></html>
